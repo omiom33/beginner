@@ -4,9 +4,9 @@ def palindrome_checker(word):
     word = word.replace(' ', '')
     word1 = word[::-1]
     if word == word1:
-        return 'The word {} is a palindrome!'.format(init_word)
+        return f'The word {init_word} is a palindrome!'
     else:
-        return 'The word {} is not a palindrome!'.format(init_word)
+        return f'The word {init_word} is not a palindrome!'
 
 # Presentation
 print('Welcome to our palindrome checker! \nEnter the word that you want to check:')

@@ -8,12 +8,12 @@ class PalindromeString(str):
 
 if __name__=='__main__':#makes the following code not run if this module is imported
     duration = None
-    while duration == None:
-    	try:
-    		duration=int(input("How many words do you want to input?\n"))
-    	except ValueError:
-    		print( "Plese input a valid decimal number.")
-    		
+    while duration is None:
+        try:
+        	duration=int(input("How many words do you want to input?\n"))
+        except ValueError:
+        	print( "Plese input a valid decimal number.")
+
     number_of_times = 0
     while number_of_times < duration:
         word= input("What is your word?\n")

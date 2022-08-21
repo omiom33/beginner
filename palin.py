@@ -5,10 +5,7 @@ print ('\nWelcome the the Python Palindrome Prober!\n')
 print ('\nPalindrome is a a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam, noon or nurses run.\n')
         
 def word_is_palindrome(word):
-    if word == word[::-1]:
-        return True
-    else:
-        return False
+    return word == word[::-1]
     
 def play_round():
     print ('''Please enter the word you would like to check
@@ -24,9 +21,8 @@ def keep_playing():
     re_play = input("Want to play again (y/n)? ")
     if re_play.lower().startswith("y"):
         return True
-    else:
-         print ('\nHave a nice day!')
-         return False
+    print ('\nHave a nice day!')
+    return False
         
 play_round()
 while keep_playing():
